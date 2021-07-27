@@ -1,14 +1,13 @@
 {
-    "Post": {
-      "title": { "string": {} },
-      "comments": {
-        "hasMany": "Comment"
+    "User": {
+      "name": { "string": {} },
+      "address": {
+        "hasMany": "Address"
       }
     },
-    "Comment": {
-      "body": { "string": {} },
-      "post": {
-        "belongsTo": "Post"
-      }
+    "Address": {
+      "street": { "string": {} },
+      "postalCode": {"string": {} },
+      "city": { "string": {} }
     }
   }
