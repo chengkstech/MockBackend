@@ -8,6 +8,9 @@
     "Address": {
       "street": { "string": {} },
       "postalCode": {"string": {} },
-      "city": { "string": {} }
+      "city": { "string": {} },
+      "user": {
+          "belongsTo": "User"
+      }
     }
   }
